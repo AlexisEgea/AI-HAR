@@ -5,17 +5,6 @@ echo "|                          Installation Requirements                      
 echo "| Author : Alexis EGEA                                                      |"
 echo "-----------------------------------------------------------------------------"
 
-echo "OS detected $OSTYPE"
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-	PYTHON_CMD=python3
-elif [[ "$OSTYPE" == "cygwin"* || "$OSTYPE" == "msys"*  ]]; then
- 	PYTHON_CMD=python
-else
-	echo "Unsupported OS '$OSTYPE'"
-	exit 1
-fi
-
-echo "_____________________________________________________________________________"
 echo "activation of conda..."
 CONDA_PATH="$HOME/anaconda3/etc/profile.d/conda.sh"
 if [ -f "$CONDA_PATH" ]; then
