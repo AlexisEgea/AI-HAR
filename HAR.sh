@@ -22,7 +22,8 @@ else
     echo "Conda not found at $CONDA_PATH"
     exit 1
 fi
-conda activate gpu
+read -p "Enter the name of your conda env: " env
+conda activate $env
 
 cd src/
 $PYTHON_CMD -m main
