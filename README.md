@@ -58,7 +58,7 @@ AI-HAR
 │   │   ├── train_insoles.h5
 │   │   ├── train_labels.h5
 │   │   └── train_mocap.h5
-│   ├── prediction                -> result of test prediction
+│   ├── prediction       
 │   │   └── prediction_0.csv
 │   └── saved_model         
 │       └── transformer_har_0
